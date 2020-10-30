@@ -19,3 +19,6 @@ I think adding in other data sets about specific causes of death such as road ac
 **Libaries/Resources Used:**
 Libaries used - Matplotlib, Python, Numpy
 Websites used - Github, GeeksforGeeks,Stackoverflow
+
+**Code used**
+Most of my code was written by myself with help from each of the documentation pages for the libaries I used. I did use code from Stackoverflow but editted it significantly to fit my own coding. 
