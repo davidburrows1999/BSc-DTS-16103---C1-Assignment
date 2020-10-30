@@ -1,0 +1,18 @@
+Requirements
+These are the requirements for using the code. To make sure all of the libaries can be installed it is neccesary to have first installed either Anaconda or the pip package 
+
+Libaries:
+Pandas
+Pandas is a data science libary for Python that provides hundreds of tools for parsing, analysing and performing operations on datasets. In this project I have used the Pandas
+libary to perform different operations on the two data sets that I have used. 
+To install pandas libary use the following code: pip install pandas or on Anaconda prompt: conda install pandas
+
+Matplotlib
+Matplotlib is another data sciene libary that can be used in Python. Matplotlib has an incredible array of functionality, allowing you to create graphs in almost any number of
+styles. In my project I used Matplotlib for plotting my data sets into a visual format. 
+To install Matplotlib use the following code: pip install matplotlib or on Anaconda prompt: conda install matplotlib
+
+Numpy
+Numpy is one of the most popular Python libaries. It is used to provide a lot mathematical functionality into Python. Whilst in this project I didnt explictly use it I imported the 
+module because in the future it may be used with Matplotlib and Pandas to provide data sets. 
+to install Numpy use the following code: pip install Numpy or on Anaconda prompt: conda install numpy
