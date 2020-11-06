@@ -1,5 +1,6 @@
  Requirements
-These are the requirements for using the code. To make sure all of the libraries can be installed it is necessary to have first installed either Anaconda or the pip package 
+These are the requirements for using the code. To make sure all of the libraries can be installed it is necessary to have 
+first installed either Anaconda or the pip package 
 
 Libraries:
 Pandas
@@ -16,6 +17,6 @@ To install Matplotlib use the following code: pip install matplotlib or on Anaco
 
 Numpy
 Numpy is one of the most popular Python libraries. It is used to provide a lot of mathematical functionality into Python. 
-Whilst in this project I didn't explicitly use it I imported the module because in the future it may be used with Matplotlib and Pandas to
-provide data sets. 
+Whilst in this project I didn't explicitly use it I imported the module because in the future it may be used with 
+Matplotlib and Pandas to provide data sets. 
 to install Numpy use the following code: pip install Numpy or on Anaconda prompt: conda install NumPy
