@@ -3,15 +3,19 @@ These are the requirements for using the code. To make sure all of the libraries
 
 Libraries:
 Pandas
-Pandas is a data science library for Python that provides hundreds of tools for parsing, analysing and performing operations on datasets. In this project, I have used the Pandas
+Pandas is a data science library for Python that provides hundreds of tools for parsing, analysing and performing operations on datasets. 
+In this project, I have used the Pandas
 library to perform different operations on the two data sets that I have used. 
 To install pandas library use the following code: pip install pandas or on Anaconda prompt: conda install pandas
 
 Matplotlib
-Matplotlib is another data science library that can be used in Python. Matplotlib has an incredible array of functionality, allowing you to create graphs in almost any number of
-styles. In my project, I used Matplotlib for plotting my data sets into a visual format. 
+Matplotlib is another data science library that can be used in Python. Matplotlib has an incredible array of functionality, 
+allowing you to create graphs in almost any number of styles. 
+In my project, I used Matplotlib for plotting my data sets into a visual format. 
 To install Matplotlib use the following code: pip install matplotlib or on Anaconda prompt: conda install matplotlib
 
 Numpy
-Numpy is one of the most popular Python libraries. It is used to provide a lot of mathematical functionality into Python. Whilst in this project I didn't explicitly use it I imported the module because in the future it may be used with Matplotlib and Pandas to provide data sets. 
+Numpy is one of the most popular Python libraries. It is used to provide a lot of mathematical functionality into Python. 
+Whilst in this project I didn't explicitly use it I imported the module because in the future it may be used with Matplotlib and Pandas to
+provide data sets. 
 to install Numpy use the following code: pip install Numpy or on Anaconda prompt: conda install NumPy
