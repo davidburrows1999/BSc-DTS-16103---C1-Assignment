@@ -8,7 +8,7 @@ Abortion Statistic Parse, Process and Plot
 
 #Importing the modules that are needed for the programme 
 #Importing the pandas data science library that allows you to manipulate a dataframe
-#Importing the matplotlib which allows you to plot data on python and can be intergrated with Pandas 
+#Importing the matplotlib which allows you to plot data on python and can be integrated with Pandas 
 #As pd just for ease rather than typing out pandas every time 
 import pandas as pd
 import matplotlib as plt
@@ -27,7 +27,7 @@ print(df.sample(2))
 #This tell us how many columns and rows we are working with  
 print(df.shape)
 
-#Then we print the colomn titles or headers so that we know what to use later on
+#Then we print the column titles or headers so that we know what to use later on
 print(df.columns)
 
 #Now we have the data the first thing we want to do is get the total number of abortions for each year
@@ -36,13 +36,13 @@ print(df.columns)
 #Create a variable totals and set that to the sum of the rows 2-8 containing the total number of abortions using .sum
 totals = (df[2:9].sum())
 
-#Use the df.append fron the pandas libary to add the information in the totals variable to a new row. The ignore_index is needed so that no new indexing is done
+#Use the df.append from the pandas library to add the information in the totals variable to a new row. The ignore_index is needed so that no new indexing is done
 df = df.append(totals[1:],ignore_index=True)
 
 #df.at is used to change the name of the new row to Total. This is done by specifying the exact location through the column name and the row 
 df.at[9,"Age"]= "Total per Year"
 
-#Secondly what we want to do is add the information in 2001-2009 for each age catergory and add that as a new column 
+#Secondly what we want to do is add the information in 2001-2009 for each age category and add that as a new column 
 #Create a new column then use iloc to get the rows for the information that we want and sum the rows 
 df["Total all Years"] = df.iloc[0:,0:].sum(axis=1)
 
@@ -58,7 +58,7 @@ df.loc[10] = (df.iloc[9,][1:10] / 365) / 24
 df.at[10,"Age"] = "Hourly Avg Rate"
 
 #Sort by Avg Daily rate
-#Create a new dataframe to store the sort which drops all the colomns that we dont need (and contain text which produces an error)
+#Create a new dataframe to store the sort which drops all the columns that we don't need (and contain text which produces an error)
 Hourly_rate_sort = df.drop(["Age", "Total all Years", "Average Over Years"], axis=1)
 #Sort the values by the 10 index, axis is set to one to denote that we are showing rows. Inplace will select the original object itself 
 Hourly_rate_sort.sort_values(by =10, axis = 1, ascending=False, inplace=True)
@@ -95,50 +95,19 @@ Total_deaths_UK_df = pd.read_csv(r"C:\Users\612811261\OneDrive - BT Plc\Document
 
 #The total death data included some other unwanted data so using the iloc function we can get rid of this
 Total_deaths_UK_df = Total_deaths_UK_df.iloc[0:10][:]
-#Print check to see if the data was imported corretly and whether the iloc has worked
+#Print check to see if the data was imported correctly and whether the iloc has worked
 print(Total_deaths_UK_df)
-#Issues can occur when the data is in the string format so using the df.astype function we change it to interger 
+#Issues can occur when the data is in the string format so using the df.astype function we change it to integer 
 Total_deaths_UK_df = Total_deaths_UK_df.astype(int)
-#Plot the data in a seperate graph to see what it looks like by itself
+#Plot the data in a separate graph to see what it looks like by itself
 Total_deaths_UK_df.plot(y="Deaths", x="Year", kind="line")
 
 
-#Using the ax label we take the total abortions plot an dthe total deths plot and we plot them together on the same chart 
+#Using the ax label we take the total abortions plot and the total deaths plot and we plot them together on the same chart 
 # the ylim is also setting limits on the axis so that the data can be seen in an effective way
 Total_vs_abortions_plot = Total_deaths_UK_df.plot(ax=ax, ylim = (150000,550000))
 #In this case it also plotted a line on the axis for years. to get rid of this I just used the .remove function on the first line that we had plotted 
 Total_vs_abortions_plot.lines[1].remove()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
