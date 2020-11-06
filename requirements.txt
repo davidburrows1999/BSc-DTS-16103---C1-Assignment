@@ -1,4 +1,4 @@
- Requirements
+Requirements
 These are the requirements for using the code. To make sure all of the libraries can be installed it is necessary to have 
 first installed either Anaconda or the pip package 
 
